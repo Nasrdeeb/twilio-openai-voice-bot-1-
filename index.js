@@ -27,7 +27,7 @@ app.post('/voice', async (req, res) => {
     const aiResponse = await axios.post(
       'https://api.openai.com/v1/chat/completions',
       {
-        model: 'gpt-3.5-turbo',
+        model: 'gpt-4.1',
         messages: [{ role: 'user', content: userSpeech }]
       },
       {
